@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Moul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Freehand&family=Moul&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(175, 176, 176);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+h1, h2, h3{
+  padding: 0;
+  margin: 0;
+}
+
+.letter{
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(206, 208, 182));
+  max-width: 600px;
+  width: 600px;
+  /* position: relative; */
+  height: calc(100vh - 18vh);
+  padding-top: 18vh;
+  gap: 4vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter h1{
+  font-family: 'Moul';
+  font-weight: normal;
+  color: #bf882d;
+  /* text-shadow: rgb(100, 99, 0) 0px 0 10px; */
+}
+
+.letter h2{
+  font-family: 'Moul';
+  font-weight: normal;
+  color:  #bf882d;
+  /* text-shadow: rgb(100, 99, 0) 0px 0 30px; */
+}
+
+.letter h3{
+  background-color: white;
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Moul';
+  font-weight: normal;
+  color:  #bf882d;
+  /* text-shadow: rgb(100, 99, 0) 0px 0 10px; */
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.letter h4{
+  font-family: 'bokor';
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #bf882d;
+}
+
+.imageletter{
+
+  /* background: transparent; */
+  position: absolute;
+  top: 0;
+  max-width: 600x;
+  width: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.letter .Parent{
+  width: 90%;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.letter .Parenttext{
+  
+  padding: 0 10px;
+}
+
+.letter .Konname{
+  color: #bf882d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myimg01 {
+  position: absolute;
+  top: 40vh;
+  left: 35%;
+  /* margin-left: 10px; */
+  width: 250px;
+  transform: rotate(-30deg);
+  z-index: 50;
+  border: 5px solid white;
+  border-radius: 20px;
+  transition: all 3s;
+}
+
+
+.myimg01:hover {
+  position: absolute;
+  top: 300px;
+  margin-left: 100px;
+  width: 400px;
+  transform: rotate(0deg);
+  z-index: 99;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+
+.myimg02 {
+  position: absolute;
+  top: 24vh;
+  left: calc(50% - 150px/2);
+  width: 150px;
+  z-index: 51;
+  border: 5px solid white;
+  border-radius: 20px;
+  transition: all 3s;
+}
+
+.myimg02:hover {
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 150px/2);
+  width: 300px;
+  transform: translateX(-20%);
+  z-index: 99;
+  border: 5px solid white;
+  border-radius: 20px;
+
+}
+
+.myimg03 {
+  position: absolute;
+  top: 40vh;
+  right: 33%;
+  width: 250px;
+  transform: rotate(10deg);
+  z-index: 50;
+  border: 5px solid white;
+  border-radius: 20px;
+  transition: all 3s;
+}
+
+
+.myimg03:hover {
+  position: absolute;
+  top: 300px;
+  margin-left: 100px;
+  width: 400px;
+  transform: rotate(0deg);
+  z-index: 99;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+.letter ul{
+  display: flex;
+  flex-direction: column;
+}
+.letter li {
+  font-family: "Freehand", cursive;
+  font-size: 0.8rem;
+  margin-left: 40px;
+  color: #bf882d;
+  /* font-style: normal; */
+}
+
+.letter .Konname p{
+  font-size: 0.8rem;
+}
+
+.Openletter{
+  font-family: "Freehand", cursive;
+  z-index: 99;
+}
+
+.imgcnn{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.imgcnn img{
+  width: 120px;
+}
+/* style={{padding: "0", margin: "0", zIndex: '99', transform: "translateY(-40px)"}} */
+.mapping{
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  transform: translateY(-40px);
+}
+.imgT1{
+  width: 100%;
+  height: 20%;
+  animation: T1 5s ease;
+  filter: drop-shadow(0 6mm 4mm rgb(255, 255, 255));
+  z-index: 10;
+}
+
+@keyframes T1 {
+  0%{
+    transform: scale(5);
+    z-index: 99;
+  }
+}
+
+.imgT2{
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  animation: T2 5s ease;
+  filter: drop-shadow(0 -6mm 4mm rgb(255, 255, 255));
+  z-index: 10;
+}
+
+@keyframes T2 {
+  0%{
+    transform: scale(5) translateY(-10vh);
+  }
+}
+
+@media (max-width: 600px) {
+  .letter{
+    min-width: 100vw;
+    width: 100vw;
+    /* background-color: blue; */
+    /* height: 10vh; */
+    padding-top: 18vh;
+    height: calc(100vh - 18vh);
+    gap: 9vh;
+  }
+
+  .letter h1{
+    font-size: 1.7rem;
+  }
+
+  .letter h2{
+    font-size: 1rem;
+  }
+
+  .imageletter{
+    width: 100vw;
+    /* height: calc(100vh - 18vh); */
+  }
+
+  .myimg01 {
+    position: absolute;
+    top: 45vh;
+    left: 13vw;
+    width: 150px;
+    transform: rotate(-30deg) translateX(-20px);
+    z-index: 50;
+    border: 5px solid white;
+    border-radius: 20px;
+    transition: all 3s;
+  }
+  
+  
+  .myimg01:hover {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    width: 80%;
+    transform: rotate(0deg) translateX(-20%);
+    z-index: 99;
+    border: 5px solid white;
+    border-radius: 20px;
+  }
+  
+  
+  .myimg02 {
+    position: absolute;
+    top: 24vh;
+    left: calc(50% - 150px/2);
+    width: 120px;
+    z-index: 51;
+    border: 5px solid white;
+    border-radius: 20px;
+    transition: all 3s;
+  }
+  
+  .myimg02:hover {
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 150px/2);
+    width: 300px;
+    transform: translateX(-70px);
+    z-index: 99;
+    border: 5px solid white;
+    border-radius: 20px;
+  
+  }
+  
+  .myimg03 {
+    position: absolute;
+    top: 45vh;
+    right: 10%;
+    width: 180px;
+    transform: rotate(30deg);
+    z-index: 50;
+    border: 5px solid white;
+    border-radius: 20px;
+    transition: all 3s;
+  }
+  
+  
+  .myimg03:hover {
+    position: absolute;
+    top: 300px;
+    width: 350px;
+    transform: rotate(0deg) translateX(20px);
+    z-index: 99;
+    border: 5px solid white;
+    border-radius: 20px;
+  }
+
+  .mapping{
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+    transform: translateY(40px);
+  }
+  
+  .mapping img{
+    width: 100vw;
+  }
+
+  .imgcnn{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .imgcnn img{
+    width: 70px;
+  }
+}
+
